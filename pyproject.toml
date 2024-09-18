@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "taskmanager"
+version = "0.1.0"
+description = ""
+authors = ["BigBlackBob-93 <101857203+BigBlackBob-93@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.1"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
