@@ -1,0 +1,16 @@
+services:
+  web:
+    container_name: tasks
+    build:
+      context: .
+    command:
+      - sh
+      - -xec
+      - |
+        cd task_manager
+        python manage.py runserver 0.0.0.0:8000
+    working_dir: /src/
+    volumes:
+      - .:/src/
+    ports:
+      - "8400:8000"
